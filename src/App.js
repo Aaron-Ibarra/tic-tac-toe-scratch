@@ -1,10 +1,10 @@
 import './App.css';
-import { useContext } from 'react';
-import { GameContext } from './context/GameContext.js';
+// import { useContext } from 'react';
+// import { GameContext } from './context/GameContext.js';
+import Board from './components/Board/Board.js';
 
 function App() {
-  const { boardState } = useContext(GameContext);
-  return <div className="App"></div>;
+  return <Board />;
 }
 
 export default App;
