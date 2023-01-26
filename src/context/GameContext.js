@@ -3,6 +3,9 @@ import { createContext, useState } from 'react';
 const GameContext = createContext();
 
 const GameProvider = ({ children }) => {
+  const [currentPlayer, setCurrentPlayer] = useState('X');
+  const [active, setActive] = useState(false);
+  const [gameMessage, setGameMessage] = useState("It's O's turn!");
   const [boardState, setBoardState] = useState([
     { space: 1, content: '' },
     { space: 2, content: '' },
