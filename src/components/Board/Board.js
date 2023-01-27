@@ -5,8 +5,6 @@ import './Board.css';
 
 export default function Board() {
   const { boardState, currentPlayer } = useContext(GameContext);
-  console.log('boardState', boardState);
-  console.log('currentPlayer', currentPlayer);
   return (
     <div className="game-board">
       {boardState.map((box) => (

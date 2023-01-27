@@ -7,15 +7,15 @@ const GameProvider = ({ children }) => {
   const [active, setActive] = useState(false);
   const [gameMessage, setGameMessage] = useState("It's O's turn!");
   const [boardState, setBoardState] = useState([
-    { space: 1, content: 'X' },
-    { space: 2, content: 'O' },
+    { space: 1, content: '' },
+    { space: 2, content: '' },
     { space: 3, content: '' },
     { space: 4, content: '' },
-    { space: 5, content: 'X' },
-    { space: 6, content: 'X' },
-    { space: 7, content: 'X' },
+    { space: 5, content: '' },
+    { space: 6, content: '' },
+    { space: 7, content: '' },
     { space: 8, content: '' },
-    { space: 9, content: 'O' },
+    { space: 9, content: '' },
   ]);
 
   return (

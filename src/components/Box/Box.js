@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { GameContext } from '../../context/GameContext.js';
 import './Box.css';
 
-export default function Box({ content }) {
+export default function Box({ content, space }) {
+  const { setBoardState, boardState, currentPlayer, setCurrentPlayer } = useContext(GameContext);
+
+  function handleBoxClick() {
+    console.log(`You clicked on box number ${space}`);
+  }
+
   return (
     <>
-      <div className="box">{content}</div>
+      <div className="box" onClick={handleBoxClick}>
+        {content}
+      </div>
     </>
   );
 }
