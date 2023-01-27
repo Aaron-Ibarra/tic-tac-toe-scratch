@@ -3,6 +3,6 @@ import { GameContext } from '../../context/GameContext.js';
 import './Message.css';
 
 export default function Message() {
-  const { currentPlayer } = useContext(GameContext);
-  return <h1 className="game-message">It is {currentPlayer}&apos;s turn!</h1>;
+  const { gameMessage } = useContext(GameContext);
+  return <h1 className="game-message">{gameMessage}</h1>;
 }
