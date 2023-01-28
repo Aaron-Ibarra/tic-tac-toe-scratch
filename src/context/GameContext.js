@@ -27,7 +27,6 @@ const GameProvider = ({ children }) => {
       }
     });
 
-    console.log('boardState[0].content', boardState[0].content === boardState[1].content);
     if (
       //First Row Win
       (boardState[0].content === 'X' &&
