@@ -14,7 +14,6 @@ export default function Box({ content, space }) {
   } = useContext(GameContext);
 
   function handleBoxClick() {
-    console.log('boardState', boardState);
     if (active === false) {
       return;
     } else if (content === 'X' || content === 'O') {

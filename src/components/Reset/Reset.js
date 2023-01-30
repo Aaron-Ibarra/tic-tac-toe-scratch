@@ -3,8 +3,7 @@ import { GameContext } from '../../context/GameContext.js';
 import './Reset.css';
 
 export default function Reset() {
-  const { setBoardState, setGameMessage, currentPlayer, setCurrentPlayer, setActive } =
-    useContext(GameContext);
+  const { setBoardState, setGameMessage, setCurrentPlayer, setActive } = useContext(GameContext);
 
   function resetGame() {
     setBoardState([

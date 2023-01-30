@@ -3,7 +3,7 @@ import { createContext, useState } from 'react';
 const GameContext = createContext();
 
 const GameProvider = ({ children }) => {
-  const [currentPlayer, setCurrentPlayer] = useState('X');
+  const [currentPlayer, setCurrentPlayer] = useState('');
   const [active, setActive] = useState(true);
   const [gameMessage, setGameMessage] = useState(`It's ${currentPlayer}'s turn!`);
   const [boardState, setBoardState] = useState([
@@ -90,7 +90,7 @@ const GameProvider = ({ children }) => {
     } else if (filledBoxes === 9) {
       //Checks if all boxes are filled
       setActive(false);
-      setGameMessage('Nobody won that sucks');
+      setGameMessage('Nobody won that sucks :/');
     }
   }
 
