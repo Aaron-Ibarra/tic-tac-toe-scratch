@@ -2,12 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Header from './components/layout/Header/Header.js';
+import Footer from './components/layout/Footer/Footer.js';
 import reportWebVitals from './reportWebVitals';
+import { GameProvider } from './context/GameContext.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Header />
+    <GameProvider>
+      <App />
+    </GameProvider>
+    <Footer />
   </React.StrictMode>
 );
 

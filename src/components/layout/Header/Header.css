@@ -1,0 +1,27 @@
+header img {
+  width: 40px;
+  transform: translateX(-70vh);
+  position: absolute;
+  background-image: linear-gradient(red, yellow);
+
+  border-radius: 30px;
+  padding: 10px;
+}
+
+header {
+  display: flex;
+  background-image: linear-gradient(white, grey);
+  padding: 2px;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* background-color: rgba(48, 95, 128, 0.281); */
+  width: 300px;
+  height: px;
+  justify-content: center;
+  align-items: center;
+}
