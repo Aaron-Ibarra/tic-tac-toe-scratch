@@ -90,7 +90,7 @@ const GameProvider = ({ children }) => {
     } else if (filledBoxes === 9) {
       //Checks if all boxes are filled
       setActive(false);
-      setGameMessage('Nobody won that sucks :/');
+      setGameMessage('Nobody won! Reset to try again.');
     }
   }
 
